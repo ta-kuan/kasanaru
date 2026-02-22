@@ -32,9 +32,8 @@
       }
       blockquote {
         margin: 0.6em;
-        border-left: solid 0.3em #A4C7AE;
+        border-left: solid 0.3em;
         padding: 0.05em 0.7em;
-        background: #F0F7F0;
       }
       h1 {
         font-family: "mintyoLL";
@@ -49,9 +48,6 @@
         font-family: "mintyoS";
         margin: 0.2em;
       }
-      ul {
-        padding: 0 0 0 3em;
-      }
       li {
         padding: 0 0 0.5em 0;
         font-family: "mintyoS";
@@ -65,7 +61,7 @@
         font-size: 3vw;
       }
       .caption {
-        padding: 0 35%;
+        text-align: center;
         border-style: solid;
         border-color: #B4D7BE;
         border-width: 0 0 0.3em 0;
@@ -80,17 +76,45 @@
         border-width: 0.2em;
         border-radius: 0.4em;
       }
+      .Btalk {
+        border-color: #A4C7AE;
+        background: #F0F7F0;
+      }
+      .Utalk {
+        padding: 0 0 0 3em;
+      }
+      .Blist {
+        border-color: #A4AEC7;
+        background: #F0F0F7;
+      }
+      .Ulist {
+        padding: 0 0.5em 0 2em;
+      }
       .liM {
-        list-style-type: "村上　";
+        list-style: "村上　";
       }
       .liI {
-        list-style-type: "石井　";
+        list-style: "石井　";
       }
       .liN {
-        list-style-type: "中林　";
+        list-style: "中林　";
       }
-      .lis {
-        list-style-type: none;
+      .doubleline {
+        border-bottom: double 0.3em #A4C7AE;
+      }
+      .dashedline {
+        border-bottom: dashed 0.3em #A4C7AE;
+      }
+      .secondblock {
+        background-color: rgb(245,245,245);
+        margin: 2.5vw;
+        width: 60vw;
+        border-radius: 0.5em;
+        padding: 0.1em 2.5vw 0.1em 2.5vw;
+      }
+      .note {
+        font-size: 4vw;
+        color: rgb(50,50,50);
       }
     </style>
     <meta charset="UTF-8">
@@ -102,33 +126,34 @@
       <h1>エモクロア TRPG　　　「カサ為ル」</h1>
       <p>十月中旬＿一日目を月曜日とする。</p>
       <br>
-      <h2 class="caption">HandOut</h2>
+      <h1 class="caption">HandOut</h1>
       <p>昔、とある怪異に助けられて手当たり次第に怪異を追っている。</p>
-      <h3 class="days">一日目＿朝</h3>
+      <h1 class="caption">Main Story</h1>
+      <h1 class="days">一日目＿朝</h1>
       <p>時折風が冷たいと感じながら、あなたは歩き慣れた道を進む。</p>
       <p>寒さからか、あなたはいつもより早い時間に高校に到着し、いつものように席に着く。</p>
       <p>そうしていつも通り、ぼーっとホームルームの始まりを待つ。校則によりスマホも漫画も禁止されているため、することがなく暇である。</p>
       <p>中の上程度の進学校であるが、校則が厳しい。いわゆる自称進というヤツだろう。</p>
       <p>ふと、近くの席に集まっているクラスの男子たちが、大きな声で会話しているのが耳に入る。</p>
-      <blockquote>
-        <ul>
+      <blockquote class="Btalk">
+        <ul class="Utalk">
           <li class="liM">「なー、お前ら知ってる？最近この学校で物が隠されたり、鞄の中に知らんもんが入ってたり、っていういたずらが起こってるらしいぜ？」</li>
         </ul>
-        <ul>
+        <ul class="Utalk">
           <li class="liI">「なにそれ？高校生にもなってそんなことしてるやつがいんの？」</li>
         </ul>
-        <ul>
+        <ul class="Utalk">
           <li class="liI">「それがよー、物が隠されている場所が普段鍵がかかってるような場所なこともあるみたいでさ。」</li>
         </ul>
-        <ul>
+        <ul class="Utalk">
           <li class="liN">「その噂、私も聞いたことがある。高校生、というより人間には出来ないようなことも起こっていて、死んだうちの元生徒がやっているんじゃないか、とか言われていたな。」</li>
         </ul>
-        <ul>
+        <ul class="Utalk">
           <li class="liM">「そーそー、んでめっちゃ気になるじゃん？だから今日さ、」</li>
         </ul>
       </blockquote>
       <p>そこでチャイムが鳴り、ホームルームが始まった。</p>
-      <h3 class="days">一日目＿昼休み</h3>
+      <h1 class="days">一日目＿昼休み</h1>
       <p>午前の授業が終わり、昼休みになった。</p>
       <p>ロールプレイタイムです、ご飯を食べてください。</p>
       <p>基本一人で食べれば良いですが、友達と食べたい場合はGMかPLが友達のロールプレイをしてください。</p>
@@ -136,20 +161,81 @@
       <p>おかずが取れるようなものでなければ一口分無くなるなど自然になるようにしてください。</p>
       <p>男モブ三人衆は昼休みが始まった直後に教室を出て調査に行っています。</p>
       <p>もし昼休みが始まった直後に話を聞きに行った場合、噂についての情報が少し得られます。</p>
-      <h4>入手できる情報</h4>
-      <ul>
-        <li>三モブが知っている事例は、「物を隠された」「鞄の中に知らない手袋が入れられていた」で、それ以上の詳細は知らない。</li>
-        <li>上記事例はいずれも同学年で起きたことである。</li>
-      </ul>
+      <h2>入手できる情報</h2>
+      <blockquote class="Blist">
+        <ul class="Ulist">
+          <li>三モブが知っている事例は、「物を隠された」「鞄の中に知らない手袋が入れられていた」で、それ以上の詳細は知らない。</li>
+          <li>上記事例はいずれも同学年で起きたことである。</li>
+        </ul>
+      </blockquote>
       <p>昼食を食べ終わり、あなたは教科書を教科書を準備しようとするが、どこを探しても見つからない。</p>
       <p>仕方がないので隣の席の人に見せてもらった。</p>
-      <h3 class="days">一日目＿放課後</h3>
+      <h1 class="days">一日目＿放課後</h1>
       <p>放課後は完全自由です。</p>
       <p>探索派には徒歩圏内</p>
       <p>探索時間は０～1時間、場所で言えば最大2箇所程度。</p>
       <p>※歴史公園、神社、図書館で得られる情報はPLがHOから元々調べていたという主張をしたら、知識などの技能成功一回で一ヶ所の情報を得られる。時間経過はなし。</p>
       <p>二回目以降は幸運に成功で技能を振ってよい。</p>
-      <h4>想定探索場所</h4>
+      <h2 class="doubleline">想定探索場所</h2>
+      <div class="secondblock">
+        <h2>学校</h2>
+      </div>
+      <div class="secondblock">
+        <h2>歴史公園</h2>
+        <h3 class="dashedline">石牌</h3>
+        <p>かつてこの地には子供を攫う怪異が居た。</p>
+        <p>その被害は大きく、村の多くの者が子供が帰らないことを悲しんだ。</p>
+        <p>ある日、子供が遊んでいる所で村の子供ではない者が居て、1人の村民が不思議に思い見ていると、影が無いことに気付き、男衆を集めて追い払った。</p>
+        <p>その日以降、被害は確認されず、見つけた男は神視(しんじ)と呼ばれ、褒め称えられた。</p>
+      </div>
+      <div class="secondblock">
+        <h2>神社</h2>
+        <h3 class="dashedline">神視祭り</h3>
+        <p>かつてこの地に居た、少女の見た目をした怪異を見破り、追い払った英雄を称えるために始まった祭り。</p>
+        <h3 class="dashedline">神視</h3>
+        <p>この神社で祀られている○○は破魔の神である。</p>
+        <p>英雄は怪異を発見する神の目を持っている、そこから神視と呼ばれるようになった。</p>
+      </div>
+      <div class="secondblock">
+        <h2>図書館</h2>
+        <h3 class="dashedline">憑依</h3>
+        <p>怪異、それは思念の集合であり、エネルギー体。</p>
+        <p>そこに確かな実態はなく、しかし強い力を持つ。</p>
+        <p>視認性も確実ではなく、存在の確認すら方法が確立していない。</p>
+        <p>だが、だからこそ、不安定でもある。</p>
+        <p>大きな力が拠り所がなく存在している。</p>
+        <p>それを嫌う怪異は度々人に憑依する。</p>
+        <p>人という殼に入り、自身を閉じ込めることで安定し、力の扱いも上手くなる。</p>
+        <p>故に、人に憑依した怪異は特段強い力を持つ。</p>
+        <p>多くの怪異は程度の差はあれど、その時に人の自我を自身の思念で上書きする。</p>
+        <h3 class="dashedline">検索成功時の本</h3>
+        <blockquote class="Blist">
+          <ul class="Ulist">
+            <li><b>怪異図鑑</b>
+              <p>検索などでそれらしき怪異の情報が得られる。</p>
+            </li>
+          </ul>
+          <ul class="Ulist">
+            <li><b>童攫い</b>
+              <p>かつてどこかの村に居たとされる怪異。</p>
+              <p>子供を攫って、どこかへやってしまう。</p>
+              <p>多くが行方不明になったが、見つかることもあった。</p>
+              <p>森に放置され死んでしまった状態で見つかることもあったそうだが、反対に自分で帰ってきて無事な子もいたそうだ。</p>
+            </li>
+          </ul>
+      </div>
+      <h1 class="days">二日目＿朝</h1>
+      <p>寒くて億劫だが、今日も学校である。</p>
+      <p>自分の席に着こうと思ったのだが、席の前に知らない女が立っている。</p>
+      <p>経路上にいるため席に着くにはどうにかしなければいけない。</p>
+      <p>ロールプレイをしましょう</p>
     </div>
+    <p class="note">
+      メモ：<br><別のところに移動>をどう書けばいいかわからんかった<br>
+      HOをかってにHandOutにして、Main Storyを作ったけど、これでどう？違ったら消します<br>
+      探索の学校の部分の文のまとまり(?)があってるか心配<br>
+      あとは、シンプルに配色とかなんでも細かいところまで改善点プリーズ
+      (俺にこの話のイメージとかTRPGのシナリオの見やすさとかわからん)
+    </p>
   </body>
 </html>
